@@ -4,6 +4,7 @@
 
 @if (Model != null)
 {
+    <img src="@Model.getImage()" width="400"/>
     <p><strong>Bun:</strong> @Model.getBun()</p>
     <p><strong>Patty:</strong> @Model.getPatty()</p>
     <p><strong>Condiments:</strong> @Model.getCondiments()</p>

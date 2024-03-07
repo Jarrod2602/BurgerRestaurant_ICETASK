@@ -16,5 +16,12 @@
         {
             return "Beef";
         }
+
+        public string getImage()
+        {
+            return "/Burger/Cheese_Burger.jpg";
+        }
+
+        
     }
 }

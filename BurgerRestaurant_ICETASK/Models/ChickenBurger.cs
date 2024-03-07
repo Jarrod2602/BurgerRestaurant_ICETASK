@@ -16,5 +16,10 @@
         {
             return "Chicken";
         }
+
+        public string getImage()
+        {
+            return "/Burger/Chicken_Burger.jpg";
+        }
     }
 }
