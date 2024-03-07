@@ -2,19 +2,20 @@
     ViewBag.Title = "Big Boi Burgers";
 }
 
-<h2>Select Burger Type</h2>
+<h2 style="margin-bottom: 20px;">Select Burger Type</h2>
 
 @using (Html.BeginForm("Index", "Burger", FormMethod.Post))
 {
-    <div class="form-group">
-        <div>
-            <img src="@Url.Content("~/Burger/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg")" alt="Chicken Burger Image" width="100" />
-            <a href="@Url.Action("Index", "Burger", new { burgerType = "Chicken" })" >Chicken Burger</a>
+    <div style="display: flex; justify-content: space-around;">
+        <div style="text-align: center;">
+            <img src="@Url.Content("~/Burger/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg")" alt="Chicken Burger Image" width="400" />
+            <br />
+            <a href="@Url.Action("Index", "Burger", new { burgerType = "Chicken" })" style="font-size: 25px; color: black;">Chicken Burger</a>
         </div>
-        <br />
-        <div>
-            <img src="@Url.Content("~/Burger/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg")" alt="Cheese Burger Image" width="100" />
-            <a href="@Url.Action("Index", "Burger", new { burgerType = "Cheese" })" >Cheese Burger</a>
+        <div style="text-align: center;">
+            <img src="@Url.Content("~/Burger/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg")" alt="Cheese Burger Image" width="400" />
+            <br />
+            <a href="@Url.Action("Index", "Burger", new { burgerType = "Cheese" })" style="font-size: 25px; color: black;">Cheese Burger</a>
         </div>
     </div>
 }
