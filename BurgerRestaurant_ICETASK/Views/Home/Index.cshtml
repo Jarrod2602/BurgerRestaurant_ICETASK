@@ -2,52 +2,20 @@
     ViewBag.Title = "Big Boi Burgers";
 }
 
-<style>
-    .burger-type {
-        display: inline-block;
-        margin-right: 20px;
-        cursor: pointer;
-    }
-
-        .burger-type img {
-            border: 2px solid transparent;
-        }
-
-        .burger-type.selected img {
-            border-color: red;
-        }
-
-        .burger-type img:hover {
-            border-color: blue;
-        }
-</style>
-
 <h2>Select Burger Type</h2>
-<body>
+
+@using (Html.BeginForm("Index", "Burger", FormMethod.Post))
+{
     <div class="form-group">
         @Html.Label("Burger Type:")
-        <div id="burgerTypeSelection">
-            <div class="burger-type" onclick="selectBurger('Chicken')">
-                <img src="path_to_chicken_image.jpg" alt="Chicken">
-            </div>
-            <div class="burger-type" onclick="selectBurger('Cheese')">
-                <img src="path_to_cheese_image.jpg" alt="Cheese">
-            </div>
-        </div>
-        <input type="hidden" id="selectedBurger" name="selectedBurger" />
+        @Html.DropDownList("burgerType", new SelectList(new[]
+        {
+            "Chicken",
+            "Cheese"
+        }), "--Select a Burger Type--", new { @class = "form-control" })
     </div>
     <div>
         @Html.ActionLink("Chicken", "Burger")
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
-
-    <script>
-        function selectBurger(burgerType) {
-            document.getElementById('selectedBurger').value = burgerType;
-            document.querySelectorAll('.burger-type').forEach(burger => {
-                burger.classList.remove('selected');
-            });
-            event.currentTarget.classList.add('selected');
-        }
-    </script>
-</body>
+}
