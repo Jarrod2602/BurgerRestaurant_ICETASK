@@ -22,6 +22,14 @@
             {
                 returnInstance = new VeggiBurger();
             }
+            else if(BurgerType.ToLower().Equals("lowcarb"))
+            {
+                returnInstance = new LowCarbBurger();
+            }
+            else if(BurgerType.ToLower().Equals("fish"))
+            {
+                returnInstance = new FishBurger();
+            }
             return returnInstance;
         }
     }
