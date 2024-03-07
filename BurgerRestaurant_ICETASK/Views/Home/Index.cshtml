@@ -8,14 +8,25 @@
 {
     <div style="display: flex; justify-content: space-around;">
         <div style="text-align: center;">
-            <img src="@Url.Content("~/Burger/Chicken_Burger.jpg")" alt="Chicken Burger Image" width="400" />
+
+
+            <a href ="@Url.Action("Index", "Burger", new { burgerType = "Chicken"})">
+                <img src="@Url.Content("~/Burger/Chicken_Burger.jpg")" alt="Chicken Burger Image" width="400" />
+            </a>           
             <br />
             <a href="@Url.Action("Index", "Burger", new { burgerType = "Chicken" })" style="font-size: 25px; color: black;">Chicken Burger</a>
+
+
         </div>
         <div style="text-align: center;">
-            <img src="@Url.Content("~/Burger/Cheese_Burger.jpg")" alt="Cheese Burger Image" width="400" />
+
+
+            <a href ="@Url.Action("Index", "Burger", new { burgerType = "Cheese"})">
+                <img src="@Url.Content("~/Burger/Cheese_Burger.jpg")" alt="Cheese Burger Image" width="400" />
+            </a>           
             <br />
             <a href="@Url.Action("Index", "Burger", new { burgerType = "Cheese" })" style="font-size: 25px; color: black;">Cheese Burger</a>
         </div>
+
     </div>
 }
