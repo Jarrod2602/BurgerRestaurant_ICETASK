@@ -14,6 +14,10 @@
             {
                 returnInstance = new CheeseBurger();
             }
+            else if(BurgerType.ToLower().Equals("plain"))
+            {
+                returnInstance = new PlainBurger();
+            }
             return returnInstance;
         }
     }

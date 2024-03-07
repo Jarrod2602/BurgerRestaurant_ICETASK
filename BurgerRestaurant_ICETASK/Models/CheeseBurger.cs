@@ -9,7 +9,7 @@
 
         public string getCondiments()
         {
-            return "Cheese, Cheese, Cheese, Cheese, Sauce";
+            return "Cheese Sauce";
         }
 
         public string getPatty()
