@@ -8,14 +8,9 @@
 {
     <div class="form-group">
         @Html.Label("Burger Type:")
-        @Html.DropDownList("burgerType", new SelectList(new[]
-        {
-            "Chicken",
-            "Cheese"
-        }), "--Select a Burger Type--", new { @class = "form-control" })
+        <br />
+        <a href="@Url.Action("Index", "Burger", new { burgerType = "Chicken" })" >Chicken Burger</a>
+        <br />
+        <a href="@Url.Action("Index", "Burger", new { burgerType = "Cheese" })" >Cheese Burger</a>
     </div>
-    <div>
-        @Html.ActionLink("Chicken", "Burger")
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
 }

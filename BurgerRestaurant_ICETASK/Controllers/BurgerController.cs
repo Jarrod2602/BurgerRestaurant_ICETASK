@@ -10,7 +10,7 @@ namespace BurgerRestaurant_ICETASK.Controllers
             return View();
         }
 
-        [HttpPost]
+        [HttpGet]
         public ActionResult Index(string burgerType)
         {
             BurgerFactory burgerFactory = new BurgerFactory();
