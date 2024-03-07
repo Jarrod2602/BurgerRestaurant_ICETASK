@@ -1,6 +1,10 @@
 ﻿namespace BurgerRestaurant_ICETASK.Models
 {
-    public class IBurger
-    {
-    }
+        public interface IBurger
+        {
+            string getBun();
+            string getPatty();
+            string getCondiments();
+        }
+    
 }

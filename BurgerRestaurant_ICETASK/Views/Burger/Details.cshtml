@@ -1,0 +1,14 @@
+﻿@model FactoryPattern_BurgerRestaurant_.Models.IBurger
+
+<h2>Burger Details</h2>
+
+@if (Model != null)
+{
+    <p><strong>Bun:</strong> @Model.getBun()</p>
+    <p><strong>Patty:</strong> @Model.getPatty()</p>
+    <p><strong>Condiments:</strong> @Model.getCondiments()</p>
+}
+else
+{
+    <p>Burger details not available.</p>
+}

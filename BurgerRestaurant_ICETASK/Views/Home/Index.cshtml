@@ -1,8 +1,18 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewBag.Title = "Select Burger Type";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h2>Select Burger Type</h2>
+
+@using (Html.BeginForm("Index", "Burger", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.Label("Burger Type:")
+        @Html.DropDownList("burgerType", new SelectList(new[]
+        {
+            "Chicken",
+            "Cheese"
+        }), "Select a Burger Type", new { @class = "form-control" })
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+}

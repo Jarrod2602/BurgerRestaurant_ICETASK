@@ -15,7 +15,8 @@ namespace BurgerRestaurant_ICETASK.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var burgerTypes = new List<string> { "Chicken", "Cheese" };
+            return View(burgerTypes);
         }
 
         public IActionResult Privacy()
