@@ -18,6 +18,10 @@
             {
                 returnInstance = new PlainBurger();
             }
+            else if(BurgerType.ToLower().Equals("veggie"))
+            {
+                returnInstance = new VeggiBurger();
+            }
             return returnInstance;
         }
     }

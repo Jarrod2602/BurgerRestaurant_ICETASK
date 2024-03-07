@@ -46,13 +46,23 @@
     <br />
     <div style="display: flex; justify-content: space-around;">
 
-
         <div style="text-align: center;">
 
 
-            <!--Insert 3 more burgers here (Make the burger classes for them too + add to burger factory)-->
+            <a href ="@Url.Action("Index", "Burger", new { burgerType = "Veggi"})">
+                <img src="@Url.Content("~/Burger/Veggi_Burger.jpg")" alt="Plain Burger Image" width="400" />
+            </a>           
+            <br />
+            <a href="@Url.Action("Index", "Burger", new { burgerType = "Veggi" })" style="font-size: 25px; color: black;">Veggie Burger</a>
+       
         
         </div>
+        
+
+
+            <!--Insert 2 more burgers here (Make the burger classes for them too + add to burger factory)-->
+        
+        
 
         </div>
 }
