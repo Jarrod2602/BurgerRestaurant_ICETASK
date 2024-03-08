@@ -19,6 +19,5 @@ body {
 
 .background-image {
     background-image: url('/Background/Restaurant_Background.jpg');
-    opacity: 0.5;
     background-size: cover;
 }
