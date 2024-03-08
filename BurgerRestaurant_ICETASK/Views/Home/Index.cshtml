@@ -4,12 +4,12 @@
 
 <body class="background-image">
 
-<h2 style="margin-bottom: 20px; text-align: center; font-size: 60px; color:black; font-weight: bold;">Select a Burger</h2>
+<h2 class="OutlineText" style="margin-bottom: 20px; text-align: center; font-size: 60px; outline-color: black; color: white; font-weight: bold;">Select a Burger</h2>
 
 @using (Html.BeginForm("Index", "Burger", FormMethod.Post))
 {
     <div style="display: flex; justify-content: space-around;">
-        <div style="text-align: center;">
+        <div class="OutlineText" style="text-align: center;">
 
 
             <a href ="@Url.Action("Index", "Burger", new { burgerType = "Chicken"})">
@@ -17,12 +17,12 @@
             </a>           
             <br />
             <a href="@Url.Action("Index", "Burger", new { burgerType = "Chicken" })" style="font-size: 25px; font-weight: bold; outline-color: black; color: white;">Chicken Burger</a>
-            <p>
+            <p style="font-size: 26px;">
                 Price: R32
             </p>
 
         </div>
-        <div style="text-align: center;">
+        <div class="OutlineText" style="text-align: center;">
 
 
             <a href ="@Url.Action("Index", "Burger", new { burgerType = "Cheese"})">
@@ -30,13 +30,13 @@
             </a>           
             <br />
                 <a href="@Url.Action("Index", "Burger", new { burgerType = "Cheese" })" style="font-size: 25px; font-weight: bold; outline-color: black; color: white;">Cheese Burger</a>
-            <p>
+            <p style="font-size: 26px;">
                 Price: R55
             </p>
         
         
         </div>
-        <div style="text-align: center;">
+        <div class="OutlineText" style="text-align: center;">
 
 
             <a href ="@Url.Action("Index", "Burger", new { burgerType = "Plain"})">
@@ -44,7 +44,7 @@
             </a>           
             <br />
                 <a href="@Url.Action("Index", "Burger", new { burgerType = "Plain" })" style="font-size: 25px; font-weight: bold; outline-color: black; color: white;">Plain Burger</a>
-            <p>
+            <p style="font-size: 26px;">
                 Price: R69
             </p>
         
@@ -54,7 +54,7 @@
     <br />
     <div style="display: flex; justify-content: space-around;">
 
-        <div style="text-align: center;">
+        <div class="OutlineText" style="text-align: center;">
 
 
             <a href ="@Url.Action("Index", "Burger", new { burgerType = "Veggie"})">
@@ -62,14 +62,14 @@
             </a>           
             <br />
                 <a href="@Url.Action("Index", "Burger", new { burgerType = "Veggie" })" style="font-size: 25px; font-weight: bold; outline-color: black; color: white;">Veggie Burger</a>
-            <p>
+            <p style="font-size: 26px;">
                 Price: R45
             </p>
         
         </div>
 
 
-         <div style="text-align: center;">
+         <div class="OutlineText" style="text-align: center;">
 
 
             <a href ="@Url.Action("Index", "Burger", new { burgerType = "Lowcarb"})">
@@ -77,14 +77,14 @@
             </a>           
             <br />
                 <a href="@Url.Action("Index", "Burger", new { burgerType = "Lowcarb" })" style="font-size: 25px; font-weight: bold; outline-color: black; color: white;">Low-Carb Burger</a>
-            <p>
+            <p style="font-size: 20px;">
                 Price: Free (No one wants them anyway)
             </p>
         
         </div>
 
 
-        <div style="text-align: center;">
+        <div class="OutlineText" style="text-align: center;">
 
 
             <a href ="@Url.Action("Index", "Burger", new { burgerType = "Fish"})">
@@ -92,7 +92,9 @@
             </a>           
             <br />
                 <a href="@Url.Action("Index", "Burger", new { burgerType = "Fish" })" style="font-size: 25px; font-weight: bold; outline-color: black; color: white;">Fish Burger</a>
-       <p>Price: R22</p>
+       <p style="font-size: 26px;">
+           Price: R22 
+       </p>
         
         </div>
         </div>

@@ -21,3 +21,15 @@ body {
     background-image: url('/Background/Restaurant_Background.jpg');
     background-size: cover;
 }
+/*
+    Code Attribution
+    Learned how to do text outline for StackOverflow
+    How to outline text in HTML / CSS
+    https://stackoverflow.com/questions/11323813/how-to-outline-text-in-html-css
+    WonderWorker
+    https://stackoverflow.com/users/1271898/wonderworker
+*/
+.OutlineText {
+    text-shadow:
+    -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000, -2px 0 0 #000000, 2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000;
+}
