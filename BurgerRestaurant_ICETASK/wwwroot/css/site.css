@@ -16,3 +16,9 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.background-image {
+    background-image: url('/Background/Restaurant_Background.png');
+    /* Add other background styles as needed */
+    background-size: cover; /* Adjusts the size of the background image to cover the entire container */
+}
