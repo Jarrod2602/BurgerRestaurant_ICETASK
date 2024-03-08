@@ -23,8 +23,9 @@ body {
 }
 
 .navbar {
-    background-image: url('/Background/NavBarBackground.jpg');
-    background-repeat: no-repeat;
+    background-image: url('/Background/NavBarBackground.png');
+    background-size: cover;
+    background-position: center;
 }
 /*
     Code Attribution
