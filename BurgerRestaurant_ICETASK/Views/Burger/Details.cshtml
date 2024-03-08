@@ -4,10 +4,14 @@
 
 @if (Model != null)
 {
-    <img src="@Model.getImage()" width="400"/>
-    <p><strong>Bun:</strong> @Model.getBun()</p>
-    <p><strong>Patty:</strong> @Model.getPatty()</p>
-    <p><strong>Condiments:</strong> @Model.getCondiments()</p>
+    <div style="display: flex; justify-content: space-around;">
+        <div class="OutlinePriceText" style="text-align:left">
+            <img src="@Model.getImage()" width="400"/>
+            <p><strong>Bun:</strong> @Model.getBun()</p>
+            <p><strong>Patty:</strong> @Model.getPatty()</p>
+            <p><strong>Condiments:</strong> @Model.getCondiments()</p>
+        </div>
+    </div>
 }
 else
 {
