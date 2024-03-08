@@ -4,7 +4,7 @@
 
 <body class="background-image">
 
-<h2 style="margin-bottom: 20px; text-align: center;">Select Burger</h2>
+<h2 style="margin-bottom: 20px; text-align: center; font-size: 60px; color:black; font-weight: bold;">Select a Burger</h2>
 
 @using (Html.BeginForm("Index", "Burger", FormMethod.Post))
 {
@@ -16,7 +16,7 @@
                 <img src="@Url.Content("~/Burger/Chicken_Burger.jpg")" alt="Chicken Burger Image" width="400" />
             </a>           
             <br />
-            <a href="@Url.Action("Index", "Burger", new { burgerType = "Chicken" })" style="font-size: 25px; font-weight: bold; color: white;">Chicken Burger</a>
+            <a href="@Url.Action("Index", "Burger", new { burgerType = "Chicken" })" style="font-size: 25px; font-weight: bold; outline-color: black; color: white;">Chicken Burger</a>
             <p>
                 Price: R32
             </p>
@@ -29,7 +29,7 @@
                 <img src="@Url.Content("~/Burger/Cheese_Burger.jpg")" alt="Cheese Burger Image" width="400" />
             </a>           
             <br />
-            <a href="@Url.Action("Index", "Burger", new { burgerType = "Cheese" })" style="font-size: 25px; font-weight: bold; color: white;">Cheese Burger</a>
+                <a href="@Url.Action("Index", "Burger", new { burgerType = "Cheese" })" style="font-size: 25px; font-weight: bold; outline-color: black; color: white;">Cheese Burger</a>
             <p>
                 Price: R55
             </p>
@@ -43,7 +43,7 @@
                 <img src="@Url.Content("~/Burger/Plain_Burger.jpg")" alt="Plain Burger Image" width="400" />
             </a>           
             <br />
-            <a href="@Url.Action("Index", "Burger", new { burgerType = "Plain" })" style="font-size: 25px; font-weight: bold; color: white;">Plain Burger</a>
+                <a href="@Url.Action("Index", "Burger", new { burgerType = "Plain" })" style="font-size: 25px; font-weight: bold; outline-color: black; color: white;">Plain Burger</a>
             <p>
                 Price: R69
             </p>
@@ -61,7 +61,7 @@
                 <img src="@Url.Content("~/Burger/Veggi_Burger.jpg")" alt="Plain Burger Image" width="400" />
             </a>           
             <br />
-            <a href="@Url.Action("Index", "Burger", new { burgerType = "Veggie" })" style="font-size: 25px; font-weight: bold; color: white;">Veggie Burger</a>
+                <a href="@Url.Action("Index", "Burger", new { burgerType = "Veggie" })" style="font-size: 25px; font-weight: bold; outline-color: black; color: white;">Veggie Burger</a>
             <p>
                 Price: R45
             </p>
@@ -76,7 +76,7 @@
                 <img src="@Url.Content("~/Burger/LowCarb_Burger.jpg")" alt="Plain Burger Image" width="400" />
             </a>           
             <br />
-            <a href="@Url.Action("Index", "Burger", new { burgerType = "Lowcarb" })" style="font-size: 25px; font-weight: bold; color: white;">Low-Carb Burger</a>
+                <a href="@Url.Action("Index", "Burger", new { burgerType = "Lowcarb" })" style="font-size: 25px; font-weight: bold; outline-color: black; color: white;">Low-Carb Burger</a>
             <p>
                 Price: Free (No one wants them anyway)
             </p>
@@ -91,7 +91,7 @@
                 <img src="@Url.Content("~/Burger/Fish_Burger.jpg")" alt="Plain Burger Image" width="400" />
             </a>           
             <br />
-            <a href="@Url.Action("Index", "Burger", new { burgerType = "Fish" })" style="font-size: 25px; font-weight: bold; color: white;">Fish Burger</a>
+                <a href="@Url.Action("Index", "Burger", new { burgerType = "Fish" })" style="font-size: 25px; font-weight: bold; outline-color: black; color: white;">Fish Burger</a>
        <p>Price: R22</p>
         
         </div>
