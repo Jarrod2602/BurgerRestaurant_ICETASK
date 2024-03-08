@@ -21,6 +21,11 @@ body {
     background-image: url('/Background/Restaurant_Background.jpg');
     background-size: cover;
 }
+
+.navbar {
+    background-image: url('/Background/NavBarBackground.jpg');
+    background-repeat: no-repeat;
+}
 /*
     Code Attribution
     Learned how to do text outline for StackOverflow
