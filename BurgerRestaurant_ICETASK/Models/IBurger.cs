@@ -6,6 +6,7 @@
         string getPatty();
         string getCondiments();
         string getImage();
+        string getPrice();
 
     }
     

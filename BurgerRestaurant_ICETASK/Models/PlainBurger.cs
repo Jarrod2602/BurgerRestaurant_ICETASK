@@ -21,5 +21,9 @@
         {
             return "Beef";
         }
+        public string getPrice()
+        {
+            return "R69,00";
+        }
     }
 }

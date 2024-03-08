@@ -21,5 +21,9 @@
         {
             return "Fish";
         }
+        public string getPrice()
+        {
+            return "R40,00";
+        }
     }
 }

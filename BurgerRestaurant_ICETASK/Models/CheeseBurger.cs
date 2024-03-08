@@ -22,6 +22,12 @@
             return "/Burger/Cheese_Burger.jpg";
         }
 
-        
+        public string getPrice()
+        {
+            return "R55,00";
+        }
+
+
+
     }
 }

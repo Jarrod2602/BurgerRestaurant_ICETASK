@@ -21,5 +21,9 @@
         {
             return "/Burger/Chicken_Burger.jpg";
         }
+        public string getPrice()
+        {
+            return "R32,00";
+        }
     }
 }

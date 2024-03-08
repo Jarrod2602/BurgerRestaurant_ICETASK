@@ -21,5 +21,9 @@
         {
             return "Vegeterian";
         }
+        public string getPrice()
+        {
+            return "R45,00";
+        }
     }
 }

@@ -21,5 +21,9 @@
         {
             return "Beef";
         }
+        public string getPrice()
+        {
+            return "R0,00";
+        }
     }
 }
