@@ -13,26 +13,30 @@
 
 
             <a href ="@Url.Action("Index", "Burger", new { burgerType = "Chicken"})">
-                <img src="@Url.Content("~/Burger/Chicken_Burger.jpg")" alt="Chicken Burger Image" width="400" />
+                <img src="@Url.Content("~/Burger/Chicken_Burger.jpg")" alt="Chicken Burger Image" width="400" height="265" />
             </a>           
             <br />
             <a href="@Url.Action("Index", "Burger", new { burgerType = "Chicken" })" style="font-size: 25px; font-weight: bold; outline-color: black; color: white;">Chicken Burger</a>
+            <div class="OutlinePriceText">
             <p style="font-size: 26px;">
                 Price: R32
             </p>
+            </div>
 
         </div>
         <div class="OutlineText" style="text-align: center;">
 
 
             <a href ="@Url.Action("Index", "Burger", new { burgerType = "Cheese"})">
-                <img src="@Url.Content("~/Burger/Cheese_Burger.jpg")" alt="Cheese Burger Image" width="400" />
+                <img src="@Url.Content("~/Burger/Cheese_Burger.jpg")" alt="Cheese Burger Image" width="400" height="265" />
             </a>           
             <br />
                 <a href="@Url.Action("Index", "Burger", new { burgerType = "Cheese" })" style="font-size: 25px; font-weight: bold; outline-color: black; color: white;">Cheese Burger</a>
-            <p style="font-size: 26px;">
+           <div class="OutlinePriceText">
+                <p style="font-size: 26px;">
                 Price: R55
             </p>
+            </div>
         
         
         </div>
@@ -40,13 +44,15 @@
 
 
             <a href ="@Url.Action("Index", "Burger", new { burgerType = "Plain"})">
-                <img src="@Url.Content("~/Burger/Plain_Burger.jpg")" alt="Plain Burger Image" width="400" />
+                <img src="@Url.Content("~/Burger/Plain_Burger.jpg")" alt="Plain Burger Image" width="400" height="265" />
             </a>           
             <br />
                 <a href="@Url.Action("Index", "Burger", new { burgerType = "Plain" })" style="font-size: 25px; font-weight: bold; outline-color: black; color: white;">Plain Burger</a>
-            <p style="font-size: 26px;">
+            <div class="OutlinePriceText">
+                <p style="font-size: 26px;">
                 Price: R69
             </p>
+            </div>
         
         </div>
 
@@ -58,13 +64,15 @@
 
 
             <a href ="@Url.Action("Index", "Burger", new { burgerType = "Veggie"})">
-                <img src="@Url.Content("~/Burger/Veggi_Burger.jpg")" alt="Plain Burger Image" width="400" />
+                <img src="@Url.Content("~/Burger/Veggi_Burger.jpg")" alt="Plain Burger Image" width="400" height="265" />
             </a>           
             <br />
                 <a href="@Url.Action("Index", "Burger", new { burgerType = "Veggie" })" style="font-size: 25px; font-weight: bold; outline-color: black; color: white;">Veggie Burger</a>
-            <p style="font-size: 26px;">
+            <div class="OutlinePriceText">
+                <p style="font-size: 26px;">
                 Price: R45
             </p>
+            </div>
         
         </div>
 
@@ -77,9 +85,12 @@
             </a>           
             <br />
                 <a href="@Url.Action("Index", "Burger", new { burgerType = "Lowcarb" })" style="font-size: 25px; font-weight: bold; outline-color: black; color: white;">Low-Carb Burger</a>
-            <p style="font-size: 20px;">
+            
+                <div class="OutlinePriceText">
+            <p style="font-size: 22px;">
                 Price: Free (No one wants them anyway)
             </p>
+            </div>
         
         </div>
 
@@ -92,9 +103,11 @@
             </a>           
             <br />
                 <a href="@Url.Action("Index", "Burger", new { burgerType = "Fish" })" style="font-size: 25px; font-weight: bold; outline-color: black; color: white;">Fish Burger</a>
-       <p style="font-size: 26px;">
+       <div class="OutlinePriceText">
+                <p style="font-size: 26px;">
            Price: R22 
        </p>
+       </div>
         
         </div>
         </div>
