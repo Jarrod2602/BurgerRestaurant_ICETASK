@@ -2,6 +2,7 @@
 {
     public interface IBurger
     {
+        string BurgerType { get; set; }
         string getBun();
         string getPatty();
         string getCondiments();

@@ -2,6 +2,7 @@
 {
     public class FishBurger : IBurger
     {
+        public string BurgerType { get; set; } = "Fish";
         public string getBun()
         {
             return "Wheat";

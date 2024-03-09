@@ -1,0 +1,30 @@
+﻿@model BurgerRestaurant_ICETASK.Models.BurgerList
+
+<h2>Cart</h2>
+
+@if (Model.Burgers.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+               <th></th>
+                <th>Burger</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var burger in Model.Burgers)
+            {
+                <tr>
+                    <td>  <img src = "@burger.getImage()" width="150" height="100"></td>
+                    <td>@burger.BurgerType Burger</td>
+                    <td>@burger.getPrice()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No burgers added to the cart.</p>
+}
