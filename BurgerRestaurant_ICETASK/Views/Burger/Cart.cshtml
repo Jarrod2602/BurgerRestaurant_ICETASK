@@ -2,7 +2,7 @@
 
 <h2>Cart</h2>
 
-@if (Model.Burgers.Any())
+@if (Model.Burgers != null)
 {
     <table class="table">
 
@@ -20,8 +20,4 @@
                 </tr>
             }
     </table>
-}
-else
-{
-    <p>No burgers added to the cart.</p>
 }
