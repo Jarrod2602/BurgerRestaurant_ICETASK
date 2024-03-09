@@ -5,14 +5,12 @@
 @if (Model.Burgers.Any())
 {
     <table class="table">
-        <thead>
+
             <tr>
                <th></th>
                 <th>Burger</th>
                 <th>Price</th>
             </tr>
-        </thead>
-        <tbody>
             @foreach (var burger in Model.Burgers)
             {
                 <tr>
@@ -21,9 +19,7 @@
                     <td>@burger.getPrice()</td>
                 </tr>
             }
-        </tbody>
     </table>
-
 }
 else
 {

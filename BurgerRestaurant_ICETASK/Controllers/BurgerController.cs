@@ -27,7 +27,6 @@ namespace BurgerRestaurant_ICETASK.Controllers
             BurgerFactory burgerFactory = new BurgerFactory();
             IBurger burger = burgerFactory.getBurger(burgerType);
 
-            // Add the selected burger to the list
             burgerList.Add(burger);
 
             return RedirectToAction("Cart");
@@ -35,11 +34,10 @@ namespace BurgerRestaurant_ICETASK.Controllers
 
         public IActionResult Cart()
         {
-            BurgerList model = new BurgerList
-            {
-                Burgers = burgerList
-            };
+            BurgerList model = new BurgerList();
 
+            model.Burgers = burgerList;
+            
             return View(model);
         }
     }
