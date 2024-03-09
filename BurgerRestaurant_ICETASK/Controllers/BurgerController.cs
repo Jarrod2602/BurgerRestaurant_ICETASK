@@ -1,4 +1,5 @@
 ﻿using BurgerRestaurant_ICETASK.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BurgerRestaurant_ICETASK.Controllers
@@ -18,6 +19,5 @@ namespace BurgerRestaurant_ICETASK.Controllers
 
             return View("Details", burger);
         }
-
     }
 }
