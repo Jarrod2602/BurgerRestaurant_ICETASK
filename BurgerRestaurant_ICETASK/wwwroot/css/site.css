@@ -22,6 +22,11 @@ body {
     background-size: cover;
 }
 
+.BackgroundImage-Details {
+    background-image: url('/Background/Details_Background.jpg');
+    background-size: cover;
+}
+
 .navbar {
     background-image: url('/Background/NavBarBackground.png');
     background-size: cover;
