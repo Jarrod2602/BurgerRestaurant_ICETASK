@@ -17,6 +17,12 @@
                     <td>  <img src = "@burger.getImage()" width="150" height="100"></td>
                     <td>@burger.BurgerType Burger</td>
                     <td>@burger.getPrice()</td>
+                    <td>
+                        <form asp-action="DeleteFromCart" method="post">
+                        <input type="hidden" name="burgerType" value="@burger.BurgerType" />
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </td>
                 </tr>
             }
             <tr>

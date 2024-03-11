@@ -40,5 +40,18 @@ namespace BurgerRestaurant_ICETASK.Controllers
             
             return View(model);
         }
+
+        [HttpPost]
+        public IActionResult DeleteFromCart(string burgerType)
+        {
+            IBurger burgerToRemove = burgerList.FirstOrDefault(b => b.BurgerType.ToLower() == burgerType.ToLower());
+
+            if (burgerToRemove != null)
+            {
+                burgerList.Remove(burgerToRemove);
+            }
+
+            return RedirectToAction("Cart");
+        }
     }
 }
