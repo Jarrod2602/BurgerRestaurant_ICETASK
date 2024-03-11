@@ -19,5 +19,10 @@
                     <td>@burger.getPrice()</td>
                 </tr>
             }
+            <tr>
+            <td></td>
+            <td style="color: red; font-weight: bold">Total</td>
+            <td style="color: red; font-weight: bold">@Model.Burgers.Sum(b => b.getPrice())</td>
+        </tr>
     </table>
 }

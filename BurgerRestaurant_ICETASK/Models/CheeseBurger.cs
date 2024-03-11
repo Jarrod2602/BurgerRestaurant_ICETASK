@@ -23,9 +23,9 @@
             return "/Burger/Cheese_Burger.jpg";
         }
 
-        public string getPrice()
+        public double getPrice()
         {
-            return "R55,00";
+            return 55.00;
         }
 
 

@@ -22,9 +22,9 @@
         {
             return "Vegeterian";
         }
-        public string getPrice()
+        public double getPrice()
         {
-            return "R45,00";
+            return 45.00;
         }
     }
 }
